@@ -15,9 +15,10 @@ public class RoomCarpet {
     }
 
     public String toString() {
-        return "The cost per square footage of this carpet is "
-                + this.carpetCost + "\nWhile the cost of the whole carpet is "
-                + getTotalCost();
+        return "The cost per square footage of this carpet is $"
+                + String.format("%.2f", this.carpetCost) +
+                "\nThe cost of the whole carpet is $"
+                + String.format("%.2f", getTotalCost());
     }
 
 }

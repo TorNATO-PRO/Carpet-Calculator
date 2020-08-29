@@ -16,6 +16,7 @@ public class RoomDimension {
 
     public String toString() {
         return "The length of this carpet is: " + this.length
-                + "\nThe width of this carpet is " + this.width;
+                + " feet\nThe width of this carpet is: " + this.width
+                + " feet\nThe total area of the carpet is " + getArea() + " feet";
     }
 }
