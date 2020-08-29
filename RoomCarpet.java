@@ -2,12 +2,12 @@ package nathan.waltz.dev;
 
 public class RoomCarpet {
 
-    private RoomDimension size;
-    private double carpetCost;
+    private final RoomDimension size;
+    private final double carpetCost;
 
-    public RoomCarpet(RoomDimension dim, double cost) {
-        this.size = dim;
-        this.carpetCost = cost;
+    public RoomCarpet(RoomDimension size, double carpetCost) {
+        this.size = size;
+        this.carpetCost = carpetCost;
     }
 
     public double getTotalCost() {
@@ -15,9 +15,9 @@ public class RoomCarpet {
     }
 
     public String toString() {
-        
+        return "The cost per square footage of this carpet is "
+                + this.carpetCost + "\nWhile the cost of the whole carpet is "
+                + getTotalCost();
     }
-
-
 
 }
