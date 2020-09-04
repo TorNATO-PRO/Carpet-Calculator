@@ -8,12 +8,11 @@
  *
  */
 
-package nathan.waltz.dev;
-
 import java.util.Scanner;
 
 public class Main {
 
+    // main method
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String again;
@@ -33,12 +32,14 @@ public class Main {
         } while (!again.contains("n"));
     }
 
+    // private helper method to make code look cleaner
     private static void introduction() {
         System.out.println("-------------------------------------");
         System.out.println("|Welcome to my carpeting calculator!|");
         System.out.println("-------------------------------------");
     }
 
+    // private helper method to carry out carpet calculations
     private static void performTask(double length, double width, double cost) {
         RoomDimension dimension = new RoomDimension(length, width);
         RoomCarpet carpet = new RoomCarpet(dimension, cost);
